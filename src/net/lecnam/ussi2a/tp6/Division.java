@@ -8,4 +8,13 @@ public class Division {
         return resultat;
     }
 
+    public double division2(int a, int b){
+       try{
+        return a / b;
+       } catch (Exception e){
+           System.out.println("Impossible de diviser par 0 !!!!");
+       }
+        return 0;
+    }
+
 }
