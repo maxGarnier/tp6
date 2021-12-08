@@ -1,6 +1,7 @@
 package net.lecnam.ussi2a.tp6;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
 
@@ -25,7 +26,29 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        exercice3();
+        //exercice3();
+        Factorielle f = new Factorielle();
+
+        try {
+            f.calcul(null);
+        }catch (IOException e ){
+            System.out.println(e.getMessage());
+        }
+
+        Scanner sc = new Scanner(System.in);
+
+        boolean ok = false;
+
+        while(!ok) {
+            String entree = sc.next();
+
+            try{
+                double resultat = f.calcul(entree);
+                System.out.println(resultat);
+            }catch {
+                
+            }
+        }
 
     }
 }

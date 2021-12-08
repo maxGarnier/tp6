@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Division {
 
-    public double division1(int a, int b){
+    public double division1(int a, int b){   // Aucune gestion du problème
         double resultat;
         resultat = a / b;
         return resultat;
@@ -12,7 +12,7 @@ public class Division {
 
 
 
-    public double division2(int a, int b)  {
+    public double division2(int a, int b)  {            // Gestion du problème mais de manière peut convaincante (renvoi d'une valeur numérique en cas d'exception)
         try{
             return a / b;
         } catch (ArithmeticException e){
@@ -33,7 +33,7 @@ public class Division {
         return null;
     }*/
 
-    public double division3(int a, int b) throws IOException{
+    public double division3(int a, int b) throws IOException{    // Meilleur manière de gérer l'exception
         try{
             return a / b;
         } catch (ArithmeticException e){
